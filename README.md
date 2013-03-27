@@ -6,7 +6,7 @@
 Create activity streams in your application which can be easily filtered by
 who or what created the activity or by the type of content.
 
-                                                           BUZZ
+                                                            BUZZ
                                                      (into communicator)
                                               No read-out yet if the air is
                                               breathable... and there seems to be
