@@ -37,7 +37,9 @@ The `Activity` model is a glorified scope, so there should never be any need for
 creating activities into the controller, with its cousins email generation and
 notification creation.
 
-In your controller, create activities along with your content.
+### Controllers
+
+Create activities along with your content.
 
 ```ruby
 class TweetsController < ActionController::Base
@@ -122,7 +124,9 @@ def friends
 end
 ```
 
-And render the activities in your application:
+### Views
+
+Render the activities in your application:
 
 `app/views/activities/_activity`
 ```haml
