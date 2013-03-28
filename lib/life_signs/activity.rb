@@ -12,17 +12,17 @@ module LifeSigns
     end
 
     module ClassMethods
-      def self.actors(actor_hash)
+      def actors(actor_hash)
         where([actors_query(actor_hash.count), *actor_hash.to_a.flatten(1)])
       end
 
       private
 
-      def self.actors_query(actors_count)
+      def actors_query(actors_count)
         ([actor_finder_sql] * actors_count).join(' OR ')
       end
 
-      def self.actor_finder_sql
+      def actor_finder_sql
         '(actor_type = ? AND actor_id IN (?))'
       end
     end
